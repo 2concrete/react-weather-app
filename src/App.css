@@ -3,4 +3,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: rubik;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

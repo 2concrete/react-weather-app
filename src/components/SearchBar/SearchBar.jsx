@@ -1,5 +1,5 @@
-import feather from "feather-icons";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Search } from "lucide-react";
 import "./SearchBar.css";
 
 const SearchBar = ({ getWeather }) => {
@@ -16,14 +16,12 @@ const SearchBar = ({ getWeather }) => {
     }
   };
 
-  useEffect(() => {
-    feather.replace();
-  }, []);
-
   return (
     <>
       <form onSubmit={handleSubmit} className="search">
-        <i data-feather="search" />
+        <button type="submit">
+          <Search />
+        </button>
         <input
           onChange={handleChange}
           value={value}
